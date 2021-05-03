@@ -10,13 +10,13 @@
     @apply text-gray-bgColor2;
   }
 
-  h1, h2 {
-    @apply text-white-color1;
+  /* h1, h2 {
+    @apply text-gray-bgColor2;
   }
 
   p {
     @apply text-white-color1;
-  }
+  } */
 }
 
 @tailwind components;
