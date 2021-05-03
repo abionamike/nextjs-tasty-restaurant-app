@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, Button, ModalCloseButton, useDisclosure } from "@chakra-ui/react"
 
 const Hero = () => {
   const [isHamburgerOpen, setIsHamburgerOpen ] = useState(false);
   const [background, setBackground] = useState('transparent border-gray-400');
+  const { isOpen, onOpen, onClose } = useDisclosure()
   
   const scrollFunc = () => {
     window.addEventListener('scroll', () => {
@@ -30,13 +32,34 @@ const Hero = () => {
               </div>
               <div className={`hidden md:block md:space-x-10`}>
                 <a href="#Home" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Home</a>
-                <a href="#About" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About</a>
-                <a href="#Services" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
-                <a href="#Projects" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Projects</a>
-                <a href="#Contact" className="font-medium text-yellow-500 hover:text-yellow-600" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact</a>
+                <a href="#About" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About Us</a>
+                <a href="#Menu" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
+                <a href="#Shop" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Shop</a>
+                <a href="#Gallery" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Gallery</a>
+                <a href="#Contact" className="font-medium text-yellow-500 hover:text-yellow-600" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
+              </div>
+              <div className="hidden md:block">
+                <a onClick={onOpen} className="flex items-center justify-center px-4 py-2 border border-transparent text-sm md:text-base font-medium rounded-3xl bg-yellow-500 md:text-base md:px-6" href="#">Sign In/Register</a>
               </div>
             </div>
           </nav>
+          <Modal isOpen={isOpen} onClose={onClose}>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalHeader>Modal Title</ModalHeader>
+              <ModalCloseButton />
+              <ModalBody>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptatum libero officiis nulla aliquam earum excepturi quaerat magni aspernatur, eum expedita distinctio nisi similique, praesentium dolore! Dignissimos, ex aliquam voluptates nulla officia numquam, quae tenetur sapiente sunt dolores asperiores nemo est perferendis illum voluptatem ipsum blanditiis ea error rerum. Explicabo?
+              </ModalBody>
+
+              <ModalFooter>
+                <Button colorScheme="blue" mr={3} onClick={onClose}>
+                  Close
+                </Button>
+                <Button variant="ghost">Secondary Action</Button>
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
           <div className={`${isHamburgerOpen ? '' : 'hidden'} fixed top-0 inset-x-0 p-2 transition duration-900 ease-in-out bg-gray-bgColor2 transform origin-top-right md:hidden z-10`}>
             <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="px-5 pt-4 flex items-center justify-end">
@@ -51,11 +74,12 @@ const Hero = () => {
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1">
                 <a href="#Home" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Home</a>
-                <a href="#About" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About</a>
-                <a href="#Services" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
-                <a href="#Projects" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Projects</a>
+                <a href="#About" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About Us</a>
+                <a href="#Menu" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
+                <a href="#Shop" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Shop</a>
+                <a href="#Gallery" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Gallery</a>
               </div>
-              <a href="#Contact" className="block w-full px-5 py-3 text-center font-medium text-yellow-500 bg-gray-bgColor hover:bg-gray-bgColor3 hover:text-yellow-400" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact</a>
+              <a href="#Contact" className="block w-full px-5 py-3 text-center font-medium text-yellow-500 bg-gray-bgColor hover:bg-gray-bgColor3 hover:text-yellow-400" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
             </div>
           </div>
           <main className="h-9/10 w-11/12 flex flex-col justify-center items-center mx-auto my-auto">
@@ -64,7 +88,7 @@ const Hero = () => {
             <div className="mt-8 bg-white-color1 rounded-full w-16 h-1 sm:mx-auto sm:mt-10 sm:w-20 md:mt-10 md:w-24 lg:mt-10 lg:m-0 lg:mt-10 lg:w-26"></div>
             <div className="flex justify-start items-center mt-5 sm:mt-8 sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
-                <a href="#Services" className="flex items-center justify-center uppercase px-4 py-2 border border-transparent text-sm md:text-base font-medium rounded-3xl bg-yellow-600 hover:bg-yellow-700 md:text-base md:px-6">
+                <a href="#Menu" className="flex items-center justify-center uppercase px-4 py-2 border border-transparent text-sm md:text-base font-medium rounded-3xl bg-yellow-600 hover:bg-yellow-700 md:text-base md:px-6">
                   See Menu
                 </a>
               </div>

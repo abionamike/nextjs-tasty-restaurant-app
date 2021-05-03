@@ -1,6 +1,20 @@
+import {
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+  CloseButton
+} from "@chakra-ui/react"
+
 const About = () => {
   return (
     <section id="About" className="text-gray-600 body-font">
+      <Alert status="error">
+        <AlertIcon />
+        <AlertTitle mr={2}>Your browser is outdated!</AlertTitle>
+        <AlertDescription>Your Chakra experience may be degraded.</AlertDescription>
+        <CloseButton position="absolute" right="8px" top="8px" />
+      </Alert>
       <div className="mx-auto flex px-8 py-24 md:flex-row flex-col items-center justify-center">
         <div className="md:w-1/2 md:pr-16 flex flex-col mb-16 md:mb-0 items-center text-center">
           <div className="mb-10">
