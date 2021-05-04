@@ -1,19 +1,19 @@
 import { useState, useEffect } from 'react';
-import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, Button, ModalCloseButton, useDisclosure } from "@chakra-ui/react"
 
 const Hero = () => {
   const [isHamburgerOpen, setIsHamburgerOpen ] = useState(false);
   const [background, setBackground] = useState('transparent border-gray-400');
-  const { isOpen, onOpen, onClose } = useDisclosure()
   
   const scrollFunc = () => {
     window.addEventListener('scroll', () => {
       window.scrollY > 60 ? setBackground('bg-black border-transparent') : setBackground('transparent border-gray-400');
     });
   }
+
   useEffect(() => {
     scrollFunc();
   }, []);
+
   return (
     <>
       <div id="Home" className="relative bg-gray-200 h-screen">
@@ -39,27 +39,10 @@ const Hero = () => {
                 <a href="#Contact" className="font-medium text-yellow-500 hover:text-yellow-600" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
               </div>
               <div className="hidden md:block">
-                <a onClick={onOpen} className="flex items-center justify-center px-4 py-2 border border-transparent text-sm md:text-base font-medium rounded-3xl bg-yellow-500 md:text-base md:px-6" href="#">Sign In/Register</a>
+                <a className="flex items-center justify-center px-4 py-2 border border-transparent text-sm md:text-base font-medium rounded-3xl bg-yellow-500 md:text-base md:px-6" href="#">Sign In/Register</a>
               </div>
             </div>
           </nav>
-          <Modal isOpen={isOpen} onClose={onClose}>
-            <ModalOverlay />
-            <ModalContent>
-              <ModalHeader>Modal Title</ModalHeader>
-              <ModalCloseButton />
-              <ModalBody>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptatum libero officiis nulla aliquam earum excepturi quaerat magni aspernatur, eum expedita distinctio nisi similique, praesentium dolore! Dignissimos, ex aliquam voluptates nulla officia numquam, quae tenetur sapiente sunt dolores asperiores nemo est perferendis illum voluptatem ipsum blanditiis ea error rerum. Explicabo?
-              </ModalBody>
-
-              <ModalFooter>
-                <Button colorScheme="blue" mr={3} onClick={onClose}>
-                  Close
-                </Button>
-                <Button variant="ghost">Secondary Action</Button>
-              </ModalFooter>
-            </ModalContent>
-          </Modal>
           <div className={`${isHamburgerOpen ? '' : 'hidden'} fixed top-0 inset-x-0 p-2 transition duration-900 ease-in-out bg-gray-bgColor2 transform origin-top-right md:hidden z-10`}>
             <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="px-5 pt-4 flex items-center justify-end">
