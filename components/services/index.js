@@ -1,8 +1,12 @@
 const Services = () => {
   return ( 
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-col md:flex-row -mx-4 -mb-10 text-center">
+      <div className="container flex flex-col px-5 py-24 mx-auto">
+        <div className="flex items-center justify-center mb-20">
+          <div className="h-12 w-1 m-2 bg-yellow-600"></div>
+          <h1 className="title-font m-2 text-gray-bgColor2 text-3xl font-semibold">Services <span className='text-yellow-600 text-base'>We Provide</span></h1>
+        </div>
+        <div className="flex flex-col items-center justify-center md:flex-row text-center">
           <div className="relative md:w-1/3 w-full mb-10 mx-4 shadow-lg">
             <div className="rounded-lg h-64 overflow-hidden">
               <img alt="content" className="object-cover object-center h-full w-full" src="/booking-02.jpg" />

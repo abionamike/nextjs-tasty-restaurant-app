@@ -1,13 +1,11 @@
 const About = () => {
   return (
     <section id="About" className="text-gray-600 body-font">
-      <div className="container mx-auto flex px-8 py-24 md:flex-row flex-col items-center justify-center">
+      <div className="container mx-auto flex px-8 py-24 mt-12 md:flex-row flex-col items-center justify-center">
         <div className="md:w-1/2 md:pr-16 flex flex-col mb-16 md:mb-0 items-center text-center">
-          <div className="mb-10">
-            <h1 className="title-font uppercase text-gray-bgColor2 sm:text-4xl text-3xl mb-4 font-medium">About <span className='text-yellow-500'>me</span></h1>
-            <div className="flex items-center justify-center mt-6">
-              <div className="w-16 h-1 rounded-full bg-yellow-500 inline-flex m-auto md:m-0"></div>
-            </div>
+          <div className="flex items-center justify-center mb-10">
+            <div className="h-12 w-1 m-2 bg-yellow-600"></div>
+            <h1 className="title-font m-2 text-gray-bgColor2 text-3xl font-semibold">About <span className='text-yellow-600 text-3xl'>Us</span></h1>
           </div>
           <p className="mb-4 leading-relaxed text-lg text-gray-bgColor2">
             My name is Michael Abiona, 
@@ -15,7 +13,7 @@ const About = () => {
             My experience has given me the privilege of seeing problems through the lens of solution.
           </p>
           <div className="flex w-full mt-5 justify-center">
-            <a href="#Projects" className="text-yellow-500 py-2 text-lg hover:text-yellow-600">See All Projects &rarr;</a>
+            <a href="#Projects" className="text-yellow-600 py-2 text-lg font-medium hover:text-yellow-700">Our Story &rarr;</a>
           </div>
         </div>
         <div className="lg:max-w-sm lg:w-full md:w-1/2 w-5/6 rounded-xl">

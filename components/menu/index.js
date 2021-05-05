@@ -1,10 +1,10 @@
 const Menu = () => {
   return ( 
-    <section className="bg-gray-200 py-16">
+    <section className="bg-gray-200 py-24">
       <div className="container w-11/12 m-auto text-center">
-        <div className="mb-10">
-          <p>Discover</p>
-          <h1 className="uppercase ">Our Menu</h1>
+        <div className="flex items-center justify-center mb-20">
+          <div className="h-12 w-1 m-2 bg-yellow-600"></div>
+          <h1 className="title-font m-2 text-gray-bgColor2 text-3xl font-semibold">Menu <span className='text-yellow-600 text-base'>of the Day</span></h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="relative md:row-span-2">

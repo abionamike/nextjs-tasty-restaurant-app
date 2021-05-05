@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="mb-8 md:mb-0">
             <h2 className="uppercase mb-6 text-gray-300 text-xl font-semibold">Latest Twitter</h2>
             <div className="my-3 text-yellow-500">@developedbyMike</div>
-            <div className="my-3">Activello is a good option. It has a slider built into that displays the featured image in the slider. <span className="text-yellow-500">https://buff.ly/2zaSfAQ</span></div>
+            <div className="my-3">Follow me on Twitter😉 and also checkout my website to see more projects like this. <span className="text-yellow-500">here</span></div>
           </div>
           <div className="mb-8 md:mb-0 md:row-span-2">
             <h2 className="uppercase mb-6 text-gray-300 text-xl font-semibold">Gallery</h2>
@@ -68,7 +68,7 @@ const Footer = () => {
           <div className="mb-8 md:mb-0">
             <h2 className="uppercase mb-6 text-gray-300 text-xl font-semibold">Latest Twitter</h2>
             <div className="my-3 text-yellow-500">@developedbyMike</div>
-            <div className="my-3">Activello is a good option. It has a slider built into that displays the featured image in the slider. <span className="text-yellow-500">https://buff.ly/2zaSfAQ</span></div>
+            <div className="my-3">Pls reach out to me if you need a website like this or if you have a project you need a helping hands on. <span className="text-yellow-500">here</span></div>
           </div>
         </div>
       </div>
