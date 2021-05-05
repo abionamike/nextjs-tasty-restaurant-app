@@ -20,7 +20,7 @@ const Hero = () => {
         <img className="object-cover h-full w-full" src="/hero2.jpg" alt="hero"/>
         <div className="absolute h-full w-full bg-black left-0 top-0 bg-opacity-75 text-white flex flex-col">
           <nav className={`h-1/10 w-full border-b fixed flex items-center justify-between ${background} z-10`} aria-label="Global">
-            <div className="w-11/12 flex items-center justify-between mx-auto">
+            <div className="container w-11/12 flex items-center justify-between mx-auto">
               <a href="#Home"><h1 className="text-2xl text-gray-300 font-semibold md:text-3xl"><span className="text-yellow-500">C</span>ravings</h1></a>
               <div className="-mr-2 flex items-center md:hidden">
                 <button onClick={() => setIsHamburgerOpen(!isHamburgerOpen)} type="button" className="bg-gray-bgColor rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-bgColor3 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500" aria-expanded="false">
