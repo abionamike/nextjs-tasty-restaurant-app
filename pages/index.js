@@ -1,8 +1,9 @@
-import Hero from '../components/hero/index'
-import About from '../components/about/index'
+import Hero from '../components/hero'
+import About from '../components/about'
 import Menu from '../components/menu'
-import Footer from '../components/footer_copy'
+import Footer from '../components/footer'
 import Services from '../components/services'
+import Testimonals from '../components/testimonials'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <About />
       <Services />
       <Menu />
+      <Testimonals />
       <Footer />
     </>
   )
