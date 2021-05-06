@@ -1,10 +1,10 @@
 const Menu = () => {
   return ( 
-    <section className="bg-gray-200 py-24">
+    <section id="Menu" className="bg-gray-200 py-24">
       <div className="container w-11/12 m-auto text-center">
         <div className="flex items-center justify-center mb-20">
           <div className="h-12 w-1 m-2 bg-yellow-600"></div>
-          <h1 className="title-font m-2 text-gray-bgColor2 text-3xl font-semibold">Menu <span className='text-yellow-600 text-base'>of the Day</span></h1>
+          <h1 className="title-font m-2 text-gray-bgColor2 text-3xl font-semibold">Menu</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="relative md:row-span-2">

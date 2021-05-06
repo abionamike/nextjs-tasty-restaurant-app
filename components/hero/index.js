@@ -33,9 +33,9 @@ const Hero = () => {
               <div className={`hidden md:block md:space-x-10`}>
                 <a href="#Home" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Home</a>
                 <a href="#About" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About Us</a>
+                <a href="#Services" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
                 <a href="#Menu" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
-                <a href="#Shop" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Shop</a>
-                <a href="#Gallery" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Gallery</a>
+                <a href="#Reviews" className="font-medium text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Reviews</a>
                 <a href="#Contact" className="font-medium text-yellow-500 hover:text-yellow-600" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
               </div>
               <div className="hidden md:block">
@@ -58,9 +58,9 @@ const Hero = () => {
               <div className="px-2 pt-2 pb-3 space-y-1">
                 <a href="#Home" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Home</a>
                 <a href="#About" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About Us</a>
+                <a href="#Services" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
                 <a href="#Menu" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
-                <a href="#Shop" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Shop</a>
-                <a href="#Gallery" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Gallery</a>
+                <a href="#Reviews" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Reviews</a>
               </div>
               <a href="#Contact" className="block w-full px-5 py-3 text-center font-medium text-yellow-500 bg-gray-bgColor hover:bg-gray-bgColor3 hover:text-yellow-400" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
             </div>

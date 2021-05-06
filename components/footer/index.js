@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="flex flex-col">
               <p>Be the first to get the lastest update and discounts on our prices.</p>
               <div className="flex justify-between mt-4">
-                <input placeholder="Your email" type="text" id="footer-field" name="footer-field" className="w-2/3 bg-gray-500 text-gray-400 bg-opacity-50 rounded border border-gray-500 focus:ring-1 focus:bg-transparent focus:ring-yellow-200 focus:border-yellow-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                <input placeholder="Email Address" type="text" id="footer-field" name="footer-field" className="w-2/3 bg-gray-500 text-gray-400 bg-opacity-50 rounded border border-gray-500 focus:ring-1 focus:bg-transparent focus:ring-yellow-200 focus:border-yellow-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                 <button className="text-gray-bgColor2 bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded">Submit</button>
               </div>
             </div>

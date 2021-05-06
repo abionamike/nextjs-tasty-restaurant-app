@@ -1,7 +1,7 @@
 const Testimonals = () => {
   return (
-    <section className="body-font">
-      <div className="container px-5 py-24 mx-auto">
+    <section id="Reviews" className="body-font">
+      <div className="container px-5 py-16 md:py-24 mx-auto">
         <div className="flex items-center justify-center mb-16">
           <div className="h-12 w-1 m-2 bg-yellow-600"></div>
           <h1 className="title-font m-2 text-gray-bgColor2 text-3xl font-semibold">Reviews</h1>
