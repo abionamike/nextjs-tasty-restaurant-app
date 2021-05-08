@@ -31,16 +31,16 @@ const Hero = () => {
                 </button>
               </div>
               <div className={`hidden md:block`}>
-                <a href="#Home" className="font-medium mx-2 lg:mx-3 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Home</a>
-                <a href="#About" className="font-medium mx-2 lg:mx-3 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About Us</a>
-                <a href="#Services" className="font-medium mx-2 lg:mx-3 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
-                <a href="#Menu" className="font-medium mx-2 lg:mx-3 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
-                <a href="#Reviews" className="font-medium mx-2 lg:mx-3 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Reviews</a>
-                <a href="#Contact" className="font-medium mx-2 lg:mx-3 text-base text-yellow-500 hover:text-yellow-600" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
+                <a href="#Home" className="font-medium mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Home</a>
+                <a href="#About" className="font-medium mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About Us</a>
+                <a href="#Services" className="font-medium mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
+                <a href="#Menu" className="font-medium mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
+                <a href="#Reviews" className="font-medium mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Reviews</a>
+                <a href="#Contact" className="font-medium mx-4 text-base text-yellow-500 hover:text-yellow-600" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
               </div>
-              <div className="hidden md:block">
-                <a className="flex items-center justify-center px-2 py-2 border-2 text-yellow-500 border-yellow-500 text-sm font-medium rounded-3xl bg-transparent hover:bg-yellow-500 hover:text-gray-bgColor2" href="#">Sign In</a>
-              </div>
+              {/* <div className="hidden md:block">
+                <a className="flex items-center justify-center px-2 py-2 border-2 text-yellow-500 border-yellow-500 text-sm font-medium rounded-3xl bg-transparent hover:bg-yellow-500 hover:text-gray-bgColor2" href="#Contact">Contact Us</a>
+              </div> */}
             </div>
           </nav>
           <div className={`${isHamburgerOpen ? '' : 'hidden'} fixed top-0 inset-x-0 p-2 transition duration-900 ease-in-out bg-gray-bgColor2 transform origin-top-right md:hidden z-10`}>
@@ -61,21 +61,19 @@ const Hero = () => {
                 <a href="#Services" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
                 <a href="#Menu" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
                 <a href="#Reviews" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Reviews</a>
-                <a href="#Reviews" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
+                {/* <a href="#Contact" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-yellow-500 hover:bg-gray-bgColor" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a> */}
               </div>
-              <a href="#Contact" className="block w-full px-5 py-3 text-center font-medium text-yellow-500 bg-gray-bgColor hover:bg-gray-bgColor3 hover:text-yellow-400" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Sign/Register</a>
+              <a href="#" className="block w-full px-5 py-3 text-center font-medium text-yellow-500 bg-gray-bgColor hover:bg-gray-bgColor3 hover:text-yellow-400" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
             </div>
           </div>
           <main className="h-9/10 w-11/12 flex flex-col justify-center items-center mx-auto my-auto">
-            <p className="text-xs md:text-xl block text-yellow-600 my-3 md:my-4">Welcome to TastyFoods</p>
-            <h1 className="text-xl text-gray-200 font-bold sm:text-3xl md:text-4xl">We Satisfy Your Culinary Desires</h1>
+            <p className="text-sm md:text-2xl block text-yellow-600 my-3 md:my-4">Welcome to TastyFoods</p>
+            <h1 className="text-2xl text-gray-200 font-bold sm:text-3xl md:text-4xl lg:text-5xl">We Satisfy Your Culinary Desires</h1>
             <div className="mt-8 bg-white-color1 rounded-full w-16 h-1 sm:mx-auto sm:mt-10 sm:w-20 md:mt-10 md:w-24 lg:mt-10 lg:m-0 lg:mt-10 lg:w-26"></div>
             <div className="flex justify-start items-center mt-5 sm:mt-8 sm:justify-center lg:justify-start">
-              <div className="rounded-md shadow">
-                <a href="#Menu" className="flex items-center justify-center uppercase px-3 py-2 border border-transparent text-xs md:text-base font-medium rounded bg-yellow-600 hover:bg-yellow-700 md:px-5">
-                  See Menu
-                </a>
-              </div>
+              <a href="#Menu" className="flex items-center justify-center uppercase px-3 py-2 border border-transparent text-xs md:text-base font-medium rounded bg-yellow-600 hover:bg-yellow-700 md:px-5">
+                See Menu
+              </a>
               <div className="ml-3">
                 <a href="#" className="flex items-center justify-center uppercase px-3 py-2 border border-transparent text-xs font-medium rounded text-yellow-700 bg-yellow-200 hover:bg-yellow-300 md:text-base md:px-5">
                   Place Order
