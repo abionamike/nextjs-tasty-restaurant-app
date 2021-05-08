@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="absolute h-full w-full bg-black left-0 top-0 bg-opacity-75 text-white flex flex-col">
           <nav className={`h-1/10 w-full border-b fixed flex items-center justify-between ${background} z-10`} aria-label="Global">
             <div className="container flex items-center justify-between mx-auto w-11/12">
-              <a href="#Home"><h1 className="text-2xl text-gray-300 font-semibold md:text-3xl"><span className="text-yellow-500">tasty</span>Foods</h1></a>
+              <a href="#Home"><h1 className="text-2xl text-gray-300 font-semibold lg:text-3xl"><span className="text-yellow-500">tasty</span>Foods</h1></a>
               <div className="-mr-2 flex items-center md:hidden">
                 <button onClick={() => setIsHamburgerOpen(!isHamburgerOpen)} type="button" className="bg-gray-bgColor rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-bgColor3 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500" aria-expanded="false">
                   <span className="sr-only">Open main menu</span>
@@ -31,12 +31,12 @@ const Hero = () => {
                 </button>
               </div>
               <div className={`hidden md:block`}>
-                <a href="#Home" className="font-medium mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Home</a>
-                <a href="#About" className="font-medium mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About Us</a>
-                <a href="#Services" className="font-medium mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
-                <a href="#Menu" className="font-medium mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
-                <a href="#Reviews" className="font-medium mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Reviews</a>
-                <a href="#Contact" className="font-medium mx-4 text-base text-yellow-500 hover:text-yellow-600" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
+                <a href="#Home" className="font-medium mx-3 lg:mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Home</a>
+                <a href="#About" className="font-medium mx-3 lg:mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About Us</a>
+                <a href="#Services" className="font-medium mx-3 lg:mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
+                <a href="#Menu" className="font-medium mx-3 lg:mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
+                <a href="#Reviews" className="font-medium mx-3 lg:mx-4 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Reviews</a>
+                <a href="#Contact" className="font-medium mx-3 lg:mx-4 text-base text-yellow-500 hover:text-yellow-600" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
               </div>
               {/* <div className="hidden md:block">
                 <a className="flex items-center justify-center px-2 py-2 border-2 text-yellow-500 border-yellow-500 text-sm font-medium rounded-3xl bg-transparent hover:bg-yellow-500 hover:text-gray-bgColor2" href="#Contact">Contact Us</a>
