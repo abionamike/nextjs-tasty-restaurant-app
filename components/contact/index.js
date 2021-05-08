@@ -15,15 +15,9 @@ const Contact = () => {
           <img src="/dinner-03.jpg" alt="Contact our customer support" className="rounded-xl md:h-96 md:w-1/2" />
           <form onSubmit={handleSubmit} className="space-y-6 w-full mt-8 md:mt-0">
             <h1 className="title-font ext-gray-bgColor2 text-xl font-semibold">Drop Us A Message!</h1>
-            <div>
-              <input required id="name" type="text" placeholder="Full name" className="w-full p-3 rounded bg-gray-200" />
-            </div>
-            <div>
-              <input required id="email" type="email" placeholder="Email" className="w-full p-3 rounded bg-gray-200" />
-            </div>
-            <div>
-              <textarea required id="message" rows="3" placeholder="Message" className="w-full p-3 rounded bg-gray-200"></textarea>
-            </div>
+            <input required id="name" type="text" placeholder="Full name" className="w-full p-3 rounded bg-gray-200" />
+            <input required id="email" type="email" placeholder="Email" className="w-full p-3 rounded bg-gray-200" />
+            <textarea required id="message" rows="3" placeholder="Message" className="w-full p-3 rounded bg-gray-200"></textarea>
             <button className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-yellow-600 text-yellow-50">Send Message</button>
           </form>
         </div>
