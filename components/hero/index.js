@@ -20,9 +20,9 @@ const Hero = () => {
         <img className="object-cover h-full w-full" src="/hero2.jpg" alt="hero"/>
         <div className="absolute h-full w-full bg-black left-0 top-0 bg-opacity-75 text-white flex flex-col">
           <nav className={`h-1/10 w-full border-b fixed flex items-center justify-between ${background} z-10`} aria-label="Global">
-            <div className="container w-11/12 flex items-center justify-between mx-auto">
+            <div className="container flex items-center justify-between mx-auto  lg:w-11/12">
               <a href="#Home"><h1 className="text-2xl text-gray-300 font-semibold md:text-2xl lg:text-3xl"><span className="text-yellow-500">tasty</span>Foods</h1></a>
-              <div className="-mr-2 flex items-center lg:hidden">
+              <div className="-mr-2 flex items-center md:hidden">
                 <button onClick={() => setIsHamburgerOpen(!isHamburgerOpen)} type="button" className="bg-gray-bgColor rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-bgColor3 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500" aria-expanded="false">
                   <span className="sr-only">Open main menu</span>
                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -30,16 +30,16 @@ const Hero = () => {
                   </svg>
                 </button>
               </div>
-              <div className={`hidden lg:block lg:space-x-8`}>
-                <a href="#Home" className="font-medium text-lg text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Home</a>
-                <a href="#About" className="font-medium text-lg text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About Us</a>
-                <a href="#Services" className="font-medium text-lg text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
-                <a href="#Menu" className="font-medium text-lg text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
-                <a href="#Reviews" className="font-medium text-lg text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Reviews</a>
-                <a href="#Contact" className="font-medium text-lg text-yellow-500 hover:text-yellow-600" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
+              <div className={`hidden md:block md:space-x-5 lg:space-x-6`}>
+                <a href="#Home" className="font-medium text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Home</a>
+                <a href="#About" className="font-medium text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About Us</a>
+                <a href="#Services" className="font-medium text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
+                <a href="#Menu" className="font-medium text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
+                <a href="#Reviews" className="font-medium text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Reviews</a>
+                <a href="#Contact" className="font-medium text-base text-yellow-500 hover:text-yellow-600" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
               </div>
-              <div className="hidden lg:block">
-                <a className="flex items-center justify-center px-3 py-2 border border-transparent text-sm font-medium rounded-3xl bg-yellow-500" href="#">Sign In/Register</a>
+              <div className="hidden md:block">
+                <a className="flex items-center justify-center px-2 py-2 border border-transparent text-sm font-medium rounded-3xl bg-yellow-500" href="#">Sign In/Register</a>
               </div>
             </div>
           </nav>
