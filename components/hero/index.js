@@ -20,8 +20,8 @@ const Hero = () => {
         <img className="object-cover h-full w-full" src="/hero2.jpg" alt="hero"/>
         <div className="absolute h-full w-full bg-black left-0 top-0 bg-opacity-75 text-white flex flex-col">
           <nav className={`h-1/10 w-full border-b fixed flex items-center justify-between ${background} z-10`} aria-label="Global">
-            <div className="container flex items-center justify-between mx-auto  lg:w-11/12">
-              <a href="#Home"><h1 className="text-2xl text-gray-300 font-semibold md:text-2xl lg:text-3xl"><span className="text-yellow-500">tasty</span>Foods</h1></a>
+            <div className="container flex items-center justify-between mx-auto w-11/12">
+              <a href="#Home"><h1 className="text-2xl text-gray-300 font-semibold md:text-xl lg:text-3xl"><span className="text-yellow-500">tasty</span>Foods</h1></a>
               <div className="-mr-2 flex items-center md:hidden">
                 <button onClick={() => setIsHamburgerOpen(!isHamburgerOpen)} type="button" className="bg-gray-bgColor rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-bgColor3 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500" aria-expanded="false">
                   <span className="sr-only">Open main menu</span>
@@ -30,16 +30,16 @@ const Hero = () => {
                   </svg>
                 </button>
               </div>
-              <div className={`hidden md:block md:space-x-5 lg:space-x-6`}>
-                <a href="#Home" className="font-medium text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Home</a>
-                <a href="#About" className="font-medium text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About Us</a>
-                <a href="#Services" className="font-medium text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
-                <a href="#Menu" className="font-medium text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
-                <a href="#Reviews" className="font-medium text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Reviews</a>
-                <a href="#Contact" className="font-medium text-base text-yellow-500 hover:text-yellow-600" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
+              <div className={`hidden md:block`}>
+                <a href="#Home" className="font-medium mx-2 lg:mx-3 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Home</a>
+                <a href="#About" className="font-medium mx-2 lg:mx-3 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>About Us</a>
+                <a href="#Services" className="font-medium mx-2 lg:mx-3 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Services</a>
+                <a href="#Menu" className="font-medium mx-2 lg:mx-3 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Menu</a>
+                <a href="#Reviews" className="font-medium mx-2 lg:mx-3 text-base text-white-color1 hover:text-yellow-500" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Reviews</a>
+                <a href="#Contact" className="font-medium mx-2 lg:mx-3 text-base text-yellow-500 hover:text-yellow-600" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>Contact Us</a>
               </div>
               <div className="hidden md:block">
-                <a className="flex items-center justify-center px-2 py-2 border border-transparent text-sm font-medium rounded-3xl bg-yellow-500" href="#">Sign In/Register</a>
+                <a className="flex items-center justify-center px-2 py-2 border-2 text-yellow-500 border-yellow-500 text-sm font-medium rounded-3xl bg-transparent hover:bg-yellow-500 hover:text-gray-bgColor2" href="#">Sign In</a>
               </div>
             </div>
           </nav>
@@ -68,7 +68,7 @@ const Hero = () => {
           </div>
           <main className="h-9/10 w-11/12 flex flex-col justify-center items-center mx-auto my-auto">
             <p className="text-xs md:text-xl block text-yellow-600 my-3 md:my-4">Welcome to TastyFoods</p>
-            <h1 className={`text-xl text-gray-200 font-bold sm:text-3xl md:text-4xl lg:text-5xl`}>We Satisfy Your Culinary Desires</h1>
+            <h1 className="text-xl text-gray-200 font-bold sm:text-3xl md:text-4xl">We Satisfy Your Culinary Desires</h1>
             <div className="mt-8 bg-white-color1 rounded-full w-16 h-1 sm:mx-auto sm:mt-10 sm:w-20 md:mt-10 md:w-24 lg:mt-10 lg:m-0 lg:mt-10 lg:w-26"></div>
             <div className="flex justify-start items-center mt-5 sm:mt-8 sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
