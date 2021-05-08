@@ -67,17 +67,17 @@ const Hero = () => {
             </div>
           </div>
           <main className="h-9/10 w-11/12 flex flex-col justify-center items-center mx-auto my-auto">
-            <h1 className="text-xl text-gray-200 font-bold sm:text-3xl md:text-4xl lg:text-5xl">We Satisfy Your Culinary Desires</h1>
-            <p className="text-sm md:text-xl block text-yellow-600 my-3 md:my-4">Call to place your order for great home-style cooking!</p>
+            <h1 className={`text-gray-200 font-bold sm:text-3xl md:text-4xl lg:text-5xl`}>We Satisfy Your Culinary Desires</h1>
+            <p className="text-xs md:text-xl block text-yellow-600 my-3 md:my-4">Call to place your order for great home-style cooking!</p>
             <div className="mt-8 bg-white-color1 rounded-full w-16 h-1 sm:mx-auto sm:mt-10 sm:w-20 md:mt-10 md:w-24 lg:mt-10 lg:m-0 lg:mt-10 lg:w-26"></div>
             <div className="flex justify-start items-center mt-5 sm:mt-8 sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
-                <a href="#Menu" className="flex items-center justify-center uppercase px-4 py-2 border border-transparent text-sm md:text-base font-medium rounded-3xl bg-yellow-600 hover:bg-yellow-700 md:text-base md:px-6">
+                <a href="#Menu" className="flex items-center justify-center uppercase px-3 py-2 border border-transparent text-sm md:text-base font-medium rounded-3xl bg-yellow-600 hover:bg-yellow-700 md:text-base md:px-6">
                   See Menu
                 </a>
               </div>
               <div className="ml-3">
-                <a href="#" className="flex items-center justify-center uppercase px-4 py-2 border border-transparent text-sm md:text-base font-medium rounded-3xl text-yellow-700 bg-yellow-200 hover:bg-yellow-300 md:text-base md:px-6">
+                <a href="#" className="flex items-center justify-center uppercase px-3 py-2 border border-transparent text-sm md:text-base font-medium rounded-3xl text-yellow-700 bg-yellow-200 hover:bg-yellow-300 md:text-base md:px-6">
                   Place Order
                 </a>
               </div>
