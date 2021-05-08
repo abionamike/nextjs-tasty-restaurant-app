@@ -1,12 +1,12 @@
 const Services = () => {
   return ( 
-    <section id="Services" className="text-gray-600 body-font">
-      <div className="container w-10/12 m-auto flex flex-col lg:px-5 py-24 mx-auto">
+    <section id="Services" className="text-gray-600 py-24">
+      <div className="container w-10/12 m-auto">
         <div className="flex items-center justify-center mb-20">
           <div className="h-12 w-1 m-2 bg-yellow-600"></div>
           <h1 className="title-font m-2 text-gray-bgColor2 text-3xl font-semibold">Services</h1>
         </div>
-        <div className="flex flex-col m-auto items-center justify-center md:flex-row text-center">
+        <div className="flex flex-col w-11/12 md:w-full m-auto items-center justify-center md:flex-row text-center">
           <div className="relative w-full mb-10 mx-4 shadow-lg">
             <div className="rounded-lg h-64 overflow-hidden">
               <img alt="content" className="object-cover object-center h-full w-full" src="/booking-02.jpg" />
