@@ -5,7 +5,7 @@ const Contact = () => {
     alert('Message received :)')
   }
   return (
-    <section id="Contact" class="py-16 my-16 md:my-24 md:py-24">
+    <section id="Contact" class="relative py-16 my-16 md:my-24 md:py-24">
       <div className="container flex flex-col items-center justify-center m-auto">
         <div className="flex items-center justify-center md:justify-start mb-20">
           <div className="h-12 w-1 m-2 bg-yellow-600"></div>

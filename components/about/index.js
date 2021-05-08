@@ -11,7 +11,7 @@ const About = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim sit dignissimos neque placeat, et a dolor dolorem inventore nesciunt obcaecati aspernatur rerum necessitatibus sapiente dicta earum, perspiciatis facere maxime aliquid repellendus, error exercitationem. Provident, porro.
           </p>
           <div className="flex w-full mt-5 justify-center">
-            <a href="#Projects" className="text-yellow-600 py-2 text-lg font-medium hover:text-yellow-700">Our Story &rarr;</a>
+            <a onClick={() => alert('The page has not been created yet😉')} href="#" className="text-yellow-600 py-2 text-lg font-medium hover:text-yellow-700">Our Story &rarr;</a>
           </div>
         </div>
         <div className="lg:max-w-sm lg:w-full md:w-1/2 w-5/6 rounded-xl">
