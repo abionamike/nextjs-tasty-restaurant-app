@@ -6,6 +6,7 @@ import Footer from '../components/footer'
 import Services from '../components/services'
 import Testimonals from '../components/testimonials'
 import Contact from '../components/contact'
+import Gallery from '../components/gallery'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Menu />
       <Testimonals />
       <Contact />
+      <Gallery />
       <Footer />
     </>
   )
